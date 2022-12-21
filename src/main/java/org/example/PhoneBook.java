@@ -25,4 +25,9 @@ public class PhoneBook {
         return callersMap.get(nameOfCaller);
     }
 
+    public String[] printAllNames(){
+
+        return null;
+    }
+
 }

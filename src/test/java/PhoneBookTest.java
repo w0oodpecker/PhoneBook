@@ -64,7 +64,37 @@ public class PhoneBookTest {
         phoneBook.add(nameOfCaller2, numberOfCaller2);
 
         //act
-        Assertions.assertEquals(numberOfCaller1, phoneBook.findByName(nameOfCaller1)); //Поиск абонента по номеру
+        Assertions.assertEquals(numberOfCaller1, phoneBook.findByName(nameOfCaller1)); //Поиск абонента по имени
+    }
+
+
+    @Test
+    public void printAllNames(){
+        String nameOfCaller0 = "Иванов Иван";
+        String numberOfCaller0 = "+79991111111";
+        String nameOfCaller1 = "Сидоров Сидр";
+        String numberOfCaller1 = "+79992222222";
+        String nameOfCaller2 = "Петров Пётр";
+        String numberOfCaller2 = "+7999333333";
+
+        //assert
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add(nameOfCaller0, numberOfCaller0);
+        phoneBook.add(nameOfCaller1, numberOfCaller1);
+        phoneBook.add(nameOfCaller2, numberOfCaller2);
+
+        String[] patternList = new String[3];
+        patternList[0] = nameOfCaller0;
+        patternList[1] = nameOfCaller2;
+        patternList[2] = nameOfCaller1;
+
+        String[] resulList = phoneBook.printAllNames();
+
+        //act
+        Assertions.assertEquals(patternList[0], resulList[0]);
+        Assertions.assertEquals(patternList[1], resulList[1]);
+        Assertions.assertEquals(patternList[2], resulList[2]);
+
     }
 
 }
