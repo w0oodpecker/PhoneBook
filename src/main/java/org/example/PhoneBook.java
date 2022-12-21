@@ -22,7 +22,7 @@ public class PhoneBook {
     }
 
     public String findByName(String nameOfCaller){
-        return null;
+        return callersMap.get(nameOfCaller);
     }
 
 }
