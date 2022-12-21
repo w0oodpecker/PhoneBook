@@ -12,4 +12,10 @@ public class PhoneBook {
         }
         return 0; //Возвращается 0 если запись не добавлена
     }
+
+
+    public String findByNumber(String numberOfCaller){
+        return null;
+    }
+
 }
