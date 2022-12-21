@@ -19,7 +19,7 @@
         Реализовать метод add так, чтобы все тесты проходили - done;
         Сделать коммит с сообщением add implemented - done;
         Создать пустой метод-заглушку findByNumber в классе PhoneBook, который просто возвращает null - done;
-        Создать тест(ы) на метод findByNumber в классе тестов PhoneBookTest;
+        Создать тест(ы) на метод findByNumber в классе тестов PhoneBookTest - done;
         Убедиться, что всё компилируется и тесты не проходят. Сделать коммит с сообщением Stub and tests for findByNumber;
         Реализовать метод findByNumber так, чтобы все тесты проходили;
         Сделать коммит с сообщением findByNumber implemented;

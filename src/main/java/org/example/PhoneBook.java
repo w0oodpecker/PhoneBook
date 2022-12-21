@@ -1,6 +1,8 @@
 package org.example;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class PhoneBook {
 
@@ -15,7 +17,8 @@ public class PhoneBook {
 
 
     public String findByNumber(String numberOfCaller){
-        return null;
+        Map<String, String> swapped = callersMap.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
+        return swapped.get(numberOfCaller);
     }
 
 }
