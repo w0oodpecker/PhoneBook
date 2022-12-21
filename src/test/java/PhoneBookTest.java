@@ -48,5 +48,23 @@ public class PhoneBookTest {
         Assertions.assertEquals(nameOfCaller1, phoneBook.findByNumber(numberOfCaller1)); //Поиск абонента по номеру
     }
 
+    @Test
+    public void findByName() {
+        String nameOfCaller0 = "Иванов Иван";
+        String numberOfCaller0 = "+79991111111";
+        String nameOfCaller1 = "Сидоров Сидр";
+        String numberOfCaller1 = "+79992222222";
+        String nameOfCaller2 = "Петров Пётр";
+        String numberOfCaller2 = "+7999333333";
+
+        //assert
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add(nameOfCaller0, numberOfCaller0);
+        phoneBook.add(nameOfCaller1, numberOfCaller1);
+        phoneBook.add(nameOfCaller2, numberOfCaller2);
+
+        //act
+        Assertions.assertEquals(numberOfCaller1, phoneBook.findByName(nameOfCaller1)); //Поиск абонента по номеру
+    }
 
 }

@@ -21,4 +21,8 @@ public class PhoneBook {
         return swapped.get(numberOfCaller);
     }
 
+    public String findByName(String nameOfCaller){
+        return null;
+    }
+
 }
