@@ -24,8 +24,8 @@ public class PhoneBookTest {
         //act
         Assertions.assertEquals(numberOfCaller0, phoneBook.callersMap.get(nameOfCaller0)); //Проверка добавления
         Assertions.assertEquals(numberOfCaller1, phoneBook.callersMap.get(nameOfCaller1)); //Проверка добавления
-        Assertions.assertEquals(false, phoneBook.add(nameOfCaller1, numberOfCaller1)); //Проверка на дублирование
-        Assertions.assertEquals(true, phoneBook.add(nameOfCaller2, numberOfCaller2)); //Проверка на отсутствие дублирования
+        Assertions.assertEquals(0, phoneBook.add(nameOfCaller1, numberOfCaller1)); //Проверка на дублирование
+        Assertions.assertEquals(3, phoneBook.add(nameOfCaller2, numberOfCaller2)); //Проверка на отсутствие дублирования
     }
 
 }
