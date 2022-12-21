@@ -19,8 +19,8 @@ public class PhoneBookTest {
         phoneBook.add(nameOfCaller1, numberOfCaller1);
 
         //act
-        Assertions.assertEquals(phoneBook.collersMap.get(nameOfCaller0), numberOfCaller0);
-        Assertions.assertEquals(phoneBook.collersMap.get(nameOfCaller1), numberOfCaller1);
+        Assertions.assertEquals(numberOfCaller0, phoneBook.callersMap.get(nameOfCaller0));
+        Assertions.assertEquals(numberOfCaller1, phoneBook.callersMap.get(nameOfCaller1));
     }
 
 }
