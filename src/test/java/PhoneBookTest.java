@@ -88,12 +88,12 @@ public class PhoneBookTest {
         patternList[1] = nameOfCaller2;
         patternList[2] = nameOfCaller1;
 
-        String[] resulList = phoneBook.printAllNames();
+        String[] resultList = phoneBook.printAllNames();
 
         //act
-        Assertions.assertEquals(patternList[0], resulList[0]);
-        Assertions.assertEquals(patternList[1], resulList[1]);
-        Assertions.assertEquals(patternList[2], resulList[2]);
+        Assertions.assertEquals(patternList[0], resultList[0]);
+        Assertions.assertEquals(patternList[1], resultList[1]);
+        Assertions.assertEquals(patternList[2], resultList[2]);
 
     }
 

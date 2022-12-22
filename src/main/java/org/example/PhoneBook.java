@@ -1,7 +1,6 @@
 package org.example;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class PhoneBook {
@@ -26,8 +25,11 @@ public class PhoneBook {
     }
 
     public String[] printAllNames(){
-
-        return null;
+        Map<String, String> sorted = callersMap.entrySet().stream().collect(Collectors.
+                toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> newValue, TreeMap::new));
+        String[] listOfNames = sorted.keySet().toArray(new String[0]);
+        Arrays.stream(listOfNames).forEach(System.out::println);
+        return listOfNames;
     }
 
 }
